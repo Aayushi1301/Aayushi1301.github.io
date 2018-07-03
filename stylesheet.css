@@ -1,6 +1,9 @@
 div {
 	border-radius: 5px;
 }
+body{
+	width:100%;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
@@ -8,6 +11,8 @@ div {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index:52;
+
 }
 
 .topnav a {
@@ -18,9 +23,10 @@ div {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  width: 100%;
 }
 
-.topav a:hover {
+.topnav a:hover {
   background: #ddd;
   color: black;
 }
@@ -32,6 +38,7 @@ ul {
     background-color: #333;
     padding-bottom:5px;
     position:fixed;
+    width:100%;
 }
 .img{
 	height: 40px;
