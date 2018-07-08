@@ -1,51 +1,117 @@
 <!DOCTYPE html>
+<!-- Template by html.am -->
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title></title>
-	</head>
-	<body>
-        <div id="topnav">
-			<ul>
-			 <li><a class="active" href="#home">Home</a></li>
-			 <li><a href="///home/zemoso/Website/Aayushi1301.github.io/aboutme.html">About me</a></li>
-			 <li><a href="///home/zemoso/Website/Aayushi1301.github.io/contact.html">Contact me</a></li>
-			 <li><a href="///home/zemoso/Website/Aayushi1301.github.io/photos.html">My photos</a></li>
-		    </ul>
-		</div>
-		<div class="bg"></div>
-        <div class="container">
-            <img class="pic" src="pics/1.jpg"/>
-            <div class="centered"><p id="me">Aayushi</p>
-	
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" href="icon.png" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Home</title>
+  <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+#myimg{
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+}
+.title {
+  color: black;
+  font-size: 18px;
+}
 
-            <div class="gallery">
-              <a target="_blank" href="#">
-               <img src="pics/co.png" alt="Coding" width="300" height="200">
-              </a>
-              <div class="desc">I love coding.Languages known:C,C++,JAVA</div>
-            </div>
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+p{
+  color:black;
+}
 
-            <div class="gallery">
-              <a target="_blank" href="#">
-                <img src="pics/z.jpeg" alt="ZeMoSo technologies" width="300" height="200">
-              </a>
-              <div class="desc">ZeMoSo Technologies-SDE(2018)</div>
-            </div>
 
-            <div class="gallery">
-              <a target="_blank" href="#">
-                <img src="pics/n.jpeg" alt="NIT Jamsehdpur" width="300" height="150">
-              </a>
-              <div class="desc">NITian-B.Tech</div>
-            </div>
-            </div>
-        </div>
-	<div id="footer">
-			<p>Created by Aayushi,2018</p>
-	</div>
 
-	</body>
+</style>
+</head>
+
+<body>
+
+  <header id="header"><p id="me"><em>Aayushi</em></p></header>
+    <div id="topnav">
+      <ul>
+       <li><a class="selected" href="#home">Home</a></li>
+       <li><a href="about.html">About me</a></li>
+       <li><a href="photos.html">My photos</a></li>
+       <li><a href="contact.html">Contact me</a></li>
+        </ul>
+    </div>
+    
+
+  <h2 style="text-align:center">My Profile Card</h2>
+  <div id="left">
+    <p size:"20"><em>Interests</em></p>
+    <p><img id="myimg" src="pics/dance.jpeg"/>Dancing</p>
+    <p><img id="myimg" src="pics/singing.jpeg"/>Singing</p>
+    <p><img id="myimg" src="pics/swimming.jpeg"/>Swimming</p>
+    <p><img id="myimg" src="pics/tennis.jpeg"/>Tennis</p>
+    <p><img id="myimg" src="pics/bad.jpeg"/>Badminton</p>
+    <p><img id="myimg" src="pics/movies.jpeg"/>Movies</p>
+    
+    
+  </div>
+  <div class="card">
+  <img src="pics/Aayushi.jpg" alt="John" style="width:100%">
+  <h1>Aayushi</h1>
+  <p class="title">Software Engineer</p>
+  <p>ZeMoSo Technologies,Hyderabad</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+ </div>
+ <p><button>Contact</button></p>
+</div>
+    
+      
+      
+      
+
+
+
+  <div id="footer-wrapper">
+    <footer id="footer"><p>Copyright &copy; All rights reserved | This template is made by Aayushi</p></footer>
+  </div>
+
+</body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
