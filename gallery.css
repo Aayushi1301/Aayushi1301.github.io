@@ -1,0 +1,129 @@
+body {
+      min-width: 630px;
+      background-color: #ffff89;
+      color: black;
+    }
+
+#header, #footer {
+      font-size: large;
+      padding: 0.3em;
+      background: #D4e157;
+    }
+
+
+
+input[type=text], input[type=email], textarea {
+    width: 40%;
+    border: 1px sole=id #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #0F45CB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #0FA3CB;
+}
+
+
+
+/* Add a background color and some padding around the form */
+#container {
+      padding-left: 200px;
+      padding-right: 190px;
+      padding-top:50px;
+      padding-bottom:50px;
+    }
+    
+
+.gallery {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  height: 250px;
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #a0af22;
+ 
+  top: 0;
+  width: 100%;
+  z-index:52;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #a0af22;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+}
+
+.topnav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a0af22;
+    padding-bottom:0px;
+    
+    width:100%;
+}
+.gallery1 {
+  width: 860px;
+  margin: 0 auto;
+}
+.gallery1 > img {
+  position: relative;
+  float: left;
+  padding: 5px;
+  display: block;
+  width: 200px;
+  height: 250px;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+

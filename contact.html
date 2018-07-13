@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="pics/icon.png" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Contact Me</title>
+  
 </head>
 
 <body>
@@ -17,16 +18,36 @@
        <li><a href="about.html">About me</a></li>
        <li><a href="photos.html">My photos</a></li>
        <li><a class="selected" href="#home">Contact me</a></li>
+       <li><a href="gallery_admin.html">Gallery Admin</a></li>
         </ul>
     </div>
-    
-    
+    <div class="containercontact">
+        <div class="containerform">
+              <h1>Contact</h1>
+              <h3>Please feel free to contact me</h3>
+      
+              <form name="contactForm" onsubmit="return validateForm()" method="POST" enctype="text/plain">
 
-  <div id="container">
+                  <label for="name">NAME:</label><br>
+                  <input type="text" id="name" name="name" placeholder="Your name.." required /><br>
 
-            <img src="pics/c.png" height="42" width="42"/><p>+919162503899</p>
-            <img src="pics/g.png" height="42" width="42"/><p>aayushi9555@gmail.com</p>
-            <p id="me">You can also find me on</p>
+                  <label for="number">MOBILE NUMBER:</label><br>
+                  <input type="text" id="nmbr" name="number" placeholder="Your mobile number.."/><br>
+
+                  <label for="email">EMAIL ID:</label><br>
+                  <input type="email" id="email" name="email" placeholder="Your email.." required/><br>
+
+                  <label for="message">MESSAGE:</label><br>
+                  <textarea id="message" name="message" placeholder="Write your message.." rows="10" required></textarea><br><br>
+
+                  <input type="submit" value="SUBMIT"/>
+
+              </form>
+        </div>
+        <div id="right">
+          
+           
+            <p ><b><em>You can also find me on</em></b></p>
 
             <div class="gallery">
               <a href="https://www.facebook.com/aayushi.kriti">
@@ -57,25 +78,19 @@
                 <img src="pics/t.png" alt="Twitter" width="300" height="150">
               </a>
             </div>
-
-<div class="gallery">
-              <a href="https://www.instagram.com/_aayushi.mishra_/">
-                <img src="pics/q.png" alt="Quora" width="300" height="150">
-              </a>
-            </div>
-
-            </div>
-        
-      
-      
-
-   </div>
+          
+        </div>
+           
+      </div>
 
   <div id="footer-wrapper">
     <footer id="footer"><p>Copyright &copy; All rights reserved | This template is made by Aayushi</p></footer>
   </div>
-
-</body>
+<script src="pictures.json" type = "text/javascript" ></script>
+  <script src = "gallery_admin_script.js" type = "text/javascript"></script>
+  <script src = "webpage.js" type = "text/javascript"></script>
+  <script src = "scriptgallery.js" type = "text/javascript"></script>
+  <script src = "formValidation.js" type = "text/javascript"></script></body>
 
 </html>
 

@@ -57,12 +57,7 @@
       float:left;
     }
     
-    #right {
-      width: 130px;
-      padding: 0 10px;
-      margin-right: 100%;
-      float:right;
-    }
+  
     
     #footer {
       clear: both;
@@ -197,6 +192,12 @@ ul {
     width:100%;
 }
 
+#contactme {
+  position:relative;
+    width: auto;
+    height: 620px;
+}
+
 
 
 #me{
@@ -208,7 +209,7 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 100px;
+    width: 50px;
     margin-top: 50px;
     margin-bottom:50px;
 }
@@ -303,4 +304,57 @@ a.selected {
     border: 1px solid #ccc;
     border-top: none;
 }
+#contactme {
+  position:relative;
+    width: auto;
+    height: 620px;
+}
 
+input[type=text], input[type=email], textarea {
+    width: 40%;
+    border: 1px sole=id #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #0F45CB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #0FA3CB;
+}
+
+
+
+.containercontact {
+   position: relative;
+    
+
+}
+.containerform {
+  
+  width: 65%;
+  
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 10px;
+  
+}
+
+#right {
+      width: 30%;
+      position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;;
+      
+    }
