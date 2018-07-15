@@ -358,3 +358,6 @@ input[type=submit]:hover {
         bottom: 0px;;
       
     }
+.wrapper {
+    text-align: center;
+}

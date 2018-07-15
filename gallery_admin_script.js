@@ -1,7 +1,9 @@
 //JSON for gallery
 var json = JSON.parse(pictures);
+
+
 var uniqueId = json.length;
-var gallery = document.getElementById('gallerypics1');
+var gallery = document.getElementById('galleryimg1');
 loadImages();
 
 //opening add image form

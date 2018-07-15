@@ -3,54 +3,13 @@
 <html>
 <head>
   <link type="text/css" rel="stylesheet" href="style.css"/>
-  <link rel="shortcut icon" href="pics/icon.png" />
+  <link rel="stylesheet" type="text/css" href="gallery.css"/>
+  <link rel="shortcut icon" href="img/icon.png" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <style>
-  .gallery {
-  width: 860px;
-  margin: 0 auto;
-}
-
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
-}
-
-.gallery > div > img {
-  display: block;
-  width: 200px;
-  height: 250px;
-}
-
-.gallery > div:hover {
-  z-index: 1;
-}
-
-.gallery > div:hover > img {
-  transform: scale(1.7,1.7);
-  transition: .3s transform;
-}
-</style>
 <title>My gallery</title>
 </head>
 <script type="text/javascript" src="pictures.json"></script>
-<script type="text/javascript" >
-var json = JSON.parse(pictures);
 
-loadGallery();
-function loadGallery(){
-  for(var it in json){
-    var item = json[it];
-    var div = document.createElement('div');
-    div.innerHTML = '<img src=' + item.src + ' />';
-    document.getElementById('gallerypics').appendChild(div);
-  }
-}
-</script>
-  <script src = "gallery_admin_script.js" type = "text/javascript"></script>
-  <script src = "webpage.js" type = "text/javascript"></script>
-  <script src = "formValidation.js" type = "text/javascript"></script>
 <body>
 
   <header id="header"><p id="me"><em>Aayushi</em></p></header>
@@ -63,19 +22,20 @@ function loadGallery(){
        <li><a href="gallery_admin.html">Gallery Admin</a></li>
         </ul>
     </div>
-    
-
- <div id=container onload="loadGallery()">
-      <h1>Photo Gallery</h1> <br>
-      <div class="gallery" id="gallerypics">
-        <!-- load images from json -->
-      </div>   
+     <div id="container">
+      <h2 style="text-align:center">Photo Gallery</h2>
+      <div class="gallery1" id="galleryimg1">
+      <!-- load img from json -->
+    </div>
     </div>
 
   <div id="footer-wrapper">
     <footer id="footer"><p>Copyright &copy; All rights reserved | This template is made by Aayushi</p></footer>
   </div>
-
+<script src="pictures.json" type = "text/javascript" ></script>
+  <script src = "gallery_admin_script.js" type = "text/javascript"></script>
+  <script src = "webpage.js" type = "text/javascript"></script>
+  <script src = "formValidation.js" type = "text/javascript"></script>
 </body>
 
 </html>
